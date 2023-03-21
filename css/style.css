@@ -10,6 +10,9 @@
 .width50{
     width: 50%;
 }
+.widht30 {
+    width: 30%;
+}
 
 .heigt100{
     height: 100%;
@@ -72,6 +75,10 @@
 .alignItemCenter {
     align-items: center;
 }
+
+.gap2Rem {
+    gap: 2rem;
+}
 .margin1Rem{
     margin: 1rem;
 }
@@ -87,6 +94,9 @@
 }
 .marginBottom3Rem {
     margin-bottom: 3rem;
+}
+.marginTop0 {
+    margin-top: 0 !important
 }
 .paddingBottom0 {
     padding-bottom: 0 !important;
@@ -105,6 +115,12 @@
     padding: 2rem;
 }
 
+.paddingY4rem {
+    padding: 4rem 0;
+}
+.paddingTop0 {
+    padding-top: 0 !important
+}
 
 .borderRadius25{
     border-radius: 25px;
@@ -116,7 +132,7 @@
 }
 
 .fontSize6Rem {
-    font-size: 30vw;
+    font-size: 6rem;
 }
 
 .textAlignCenter {
@@ -131,8 +147,8 @@
 }
 
 .circle {
-    height: 50vw;
-    width: 50vw;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
 }
 
@@ -174,8 +190,44 @@ main img {
 
 
 /* footer */
+footer button {
+    border-color: rgba(255, 255, 255, 0);
+}
 
+footer .big {
+    font-size: 4rem ; 
+}
 
 /* tablet viewing */
+
+@media screen and (min-width: 480px){
+    .tabletViewWidthBigCard{ 
+        width: calc(( 100% / 3 ) * 2  - 2rem );
+    }
+    .tabletViewRowWrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tabletViewCard{
+        width: calc(( 100% / 3 ) - 2rem);
+    }
+    .tabletViewTextAlign {
+        text-align: left;
+    }
+    .tabletViewRow {
+        flex-direction: row;
+    }
+    .tabletWidth50 {
+        width: calc(50% - 2rem);
+    }
+    .tabletWidth30 {
+        width: 30%;
+    }
+    .tabletWidth70 {
+        width: 70%;
+    }
+
+}
 
 /* desktop viewing */
